@@ -1,239 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eduford</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-  </head>
-  <body>
-    <section class="header">
-      <nav>
-        <a href="index.html"><img src="imgs/logo.png" alt="" /></a>
-        <div class="nav-links" id="navLinks">
-          <i class="fa fa-times" onclick="hideMenu()"></i>
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="course.html">COURSE</a></li>
-            <li><a href="blog.html">BLOG</a></li>
-            <li><a href="contact.html">CONTACT US </a></li>
-          </ul>
-        </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home | Proudcore LTD</title>
+  <meta name="description" content="Proudcore LTD — Solar & inverter solutions: design, installation, maintenance, and energy audits for homes and businesses." />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="pc-header">
+    <div class="pc-container pc-nav">
+      <a class="pc-logo" href="index.html">
+        <span class="pc-logo-mark">P</span>
+        <span class="pc-logo-text">Proudcore LTD</span>
+      </a>
+      <button class="pc-nav-toggle" aria-expanded="false" aria-controls="pc-menu" aria-label="Toggle navigation">
+  ☰
+</button>
+
+      <nav id="pc-menu" class="pc-menu" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a class="pc-cta" href="contact.html">Contact</a>
       </nav>
+    </div>
+  </header>
 
-      <div class="text-box">
-        <h1>World's Biggest Digital Services</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-          accusantium suscipit,<br />
-          quae tenetur modi amet, atque dicta alias reprehenderit unde eius sunt
-          quisquam beatae ad?
-        </p>
-        <a href="" class="hero-btn">Visit Us To know More</a>
-      </div>
-    </section>
-
-    <!-- Course -->
-
-    <section class="course">
-      <h1>Courses We Offer</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-
-      <div class="row">
-        <div class="course-col">
-          <h3>Intermediate</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-            nulla recusandae eos officia consequatur, obcaecati quae expedita
-            quisquam quia laborum temporibus eveniet et delectus, quaerat sunt
-            repellendus suscipit fugit, a aliquid minus vero. Assumenda,
-            reiciendis.
-          </p>
+  <main>
+    <section class="pc-hero" style="--hero:url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1600&auto=format&fit=crop');">
+      <div class="pc-container pc-hero-inner">
+        <h1>Power your world with <span class="pc-accent">clean, reliable energy</span></h1>
+        <p>We design and install high-efficiency solar and inverter systems for homes, SMEs, and estates. Cut diesel costs, beat grid outages, and get predictable power 24/7.</p>
+        <div class="pc-actions">
+          <a class="pc-btn pc-btn--primary" href="contact.html">Get a Free Quote</a>
+          <a class="pc-btn" href="products.html">Explore Products</a>
         </div>
-
-        <div class="course-col">
-          <h3>Degree</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-            nulla recusandae eos officia consequatur, obcaecati quae expedita
-            quisquam quia laborum temporibus eveniet et delectus, quaerat sunt
-            repellendus suscipit fugit, a aliquid minus vero. Assumenda,
-            reiciendis.
-          </p>
-        </div>
-
-        <div class="course-col">
-          <h3>Post Graduation</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-            nulla recusandae eos officia consequatur, obcaecati quae expedita
-            quisquam quia laborum temporibus eveniet et delectus, quaerat sunt
-            repellendus suscipit fugit, a aliquid minus vero. Assumenda,
-            reiciendis.
-          </p>
+        <div class="pc-badges">
+          <span>10+ Years Combined Expertise</span>
+          <span>Nationwide Installation</span>
+          <span>After-sales Support</span>
         </div>
       </div>
     </section>
 
-    <!-- campus -->
+    <section class="pc-container pc-grid pc-features">
+      <div class="pc-card">
+        <h3>Lower Bills</h3>
+        <p>Slash diesel and generator spend with efficient solar panels, MPPT charge controllers, and lithium batteries sized to your loads.</p>
+      </div>
+      <div class="pc-card">
+        <h3>Uninterrupted Power</h3>
+        <p>Hybrid inverters with seamless switchover keep your lights, fridges, and ACs running—even during long outages.</p>
+      </div>
+      <div class="pc-card">
+        <h3>Built for Nigeria</h3>
+        <p>We engineer around heat, dust, and humidity. Proper earthing, surge protection, and tidy wiring are standard.</p>
+      </div>
+    </section>
 
-    <section class="campus">
-      <h1>Our Global Campus</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <section class="pc-section">
+      <div class="pc-container">
+        <header class="pc-section-head">
+          <h2>Featured Products</h2>
+          <a class="pc-link" href="products.html">View all products</a>
+        </header>
+        <div class="pc-grid pc-cards-3">
+          <article class="pc-card pc-card--product">
+            <img src="assets/imgs/solar1.jpg" alt="Monocrystalline solar panels on roof">
+            <div class="pc-card-body">
+              <h3>Monocrystalline Solar Panels</h3>
+              <p>High-efficiency modules from 250W–600W for residential & commercial arrays.</p>
+              <a class="pc-btn pc-btn--ghost" href="products.html">Learn more</a>
+            </div>
+          </article>
+          <article class="pc-card pc-card--product">
+            <img src="assets/imgs/lithium-battery.webp" alt="Rack of lithium batteries">
+            <div class="pc-card-body">
+              <h3>Lithium Batteries</h3>
+              <p>Long-life LiFePO₄ packs with smart BMS—safe, fast-charging, and compact.</p>
+              <a class="pc-btn pc-btn--ghost" href="products.html">Learn more</a>
+            </div>
+          </article>
+          <article class="pc-card pc-card--product">
+            <img src="assets/imgs/inverter1.webp" alt="Hybrid inverter mounted on wall">
+            <div class="pc-card-body">
+              <h3>Hybrid Inverters</h3>
+              <p>Pure-sine wave inverters with PV+grid input for seamless uptime.</p>
+              <a class="pc-btn pc-btn--ghost" href="products.html">Learn more</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-      <div class="row">
-        <div class="campus-col">
-          <img src="imgs/london.png" alt="" />
-          <div class="layer">
-            <h3>LONDON</h3>
+    <section class="pc-section pc-section--alt">
+      <div class="pc-container pc-grid pc-why">
+        <div>
+          <h2>Why choose Proudcore?</h2>
+          <ul class="pc-list pc-list--check">
+            <li>Right-sizing via load assessment — no under/over-sizing.</li>
+            <li>Clean cable management, proper MCB/RCBO & surge protection.</li>
+            <li>Warranty and responsive after-sales support.</li>
+          </ul>
+          <div class="pc-actions pc-mt-2">
+            <a class="pc-btn pc-btn--primary" href="contact.html">Request Site Survey</a>
           </div>
         </div>
-
-        <div class="campus-col">
-          <img src="imgs/newyork.png" alt="" />
-          <div class="layer">
-            <h3>NEW YORK</h3>
-          </div>
-        </div>
-
-        <div class="campus-col">
-          <img src="imgs/washington.png" alt="" />
-          <div class="layer">
-            <h3>WASHINGTON</h3>
-          </div>
-        </div>
+        <img class="pc-img-cover" src="assets/imgs/solar4.jpg" alt="Technician working on electrical panel">
       </div>
     </section>
 
-    <!-- Facilities -->
-
-    <section class="facilities">
-      <h1>Our Facilities</h1>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-
-      <div class="row">
-        <div class="facilities-col">
-          <img src="imgs/library.png" alt="" />
-          <h3>World Class Library</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-            assumenda consectetur praesentium dicta nemo.
-          </p>
-        </div>
-
-        <div class="facilities-col">
-          <img src="imgs/basketball.png" alt="" />
-          <h3>Largest Play Ground</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-            assumenda consectetur praesentium dicta nemo.
-          </p>
-        </div>
-
-        <div class="facilities-col">
-          <img src="imgs/cafeteria.png" alt="" />
-          <h3>Tasty and Heaalthy Food</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-            assumenda consectetur praesentium dicta nemo.
-          </p>
-        </div>
+    <section class="pc-section">
+      <div class="pc-container pc-cta-wide">
+        <h2>Ready to beat outages for good?</h2>
+        <p>Tell us your typical loads and hours of use. We’ll recommend a system that fits your budget and goals.</p>
+        <a class="pc-btn pc-btn--primary" href="contact.html">Get a Free Quote</a>
       </div>
     </section>
+  </main>
 
-    <!-- testimonals -->
-
-    <section class="testimonials">
-      <h1>What Our Stundents Says</h1>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-
-      <div class="row">
-        <div class="testimonial-col">
-          <img src="imgs/user1.jpg" alt="" />
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, et
-              labore. Eius, illum cupiditate?
-            </p>
-            <h3>Christine Berkley</h3>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-        </div>
-
-        <div class="testimonial-col">
-          <img src="imgs/user2.jpg" alt="" />
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, et
-              labore. Eius, illum cupiditate?
-            </p>
-            <h3>Jack Sparrow</h3>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-        </div>
+  <footer class="pc-footer">
+    <div class="pc-container pc-footer-grid">
+      <div>
+        <div class="pc-logo pc-logo--footer"><span class="pc-logo-mark">P</span><span class="pc-logo-text">Proudcore LTD</span></div>
+        <p class="pc-mt-2">Reliable solar & inverter systems built for the Nigerian environment. Lower your energy bills, beat outages, and power what matters.</p>
       </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="cta">
-      <h1>
-        Enroll For Our Various Online Courses <br />
-        Anywhere From The World
-      </h1>
-      <a href="" class="hero-btn">CONTACT US</a>
-    </section>
-
-    <!-- Footer -->
-
-    <section class="footer">
-      <h4>About Us</h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-        repellendus unde corrupti nostrum labore sit enim delectus repellat
-        <br />
-        aperiam magni sunt architecto doloribus. Architecto, unde molestias
-        dolorem eum necessitatibus porro?
-      </p>
-      <div class="icons">
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-linkedin"></i>
+      <div>
+        <h4>Contact</h4>
+        <ul class="pc-list">
+          <li><a href="tel:+2348000000000">+234 800 000 0000</a></li>
+          <li><a href="mailto:hello@proudcore.com">proudcore@gmail.com</a></li>
+          <li>Lagos • Warri • Nationwide installs</li>
+        </ul>
       </div>
-      <p>Made with <i class="fa fa-heart-o"></i> by ClarkeTJ</p>
-    </section>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="pc-list">
+          <li><a href="products.html">Products</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Get a Quote</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pc-container pc-footer-bottom">
+      <small>&copy; <span id="year"></span> Proudcore LTD. All rights reserved.</small>
+      <div class="pc-socials">
+        <a href="https://wa.me/2348000000000" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="#" target="_blank" rel="noopener">Facebook</a>
+        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
 
-    <script>
-      var navLinks = document.getElementById("navLinks");
-
-      function showMenu() {
-        navLinks.style.right = "0";
-      }
-      function hideMenu() {
-        navLinks.style.right = "-200px";
-      }
-    </script>
-  </body>
+  <script src="assets/js/main.js"></script>
+</body>
 </html>

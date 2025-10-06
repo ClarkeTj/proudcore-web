@@ -1,142 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eduford</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-  </head>
-  <body>
-    <section class="sub-header">
-      <nav>
-        <a href="index.html"><img src="imgs/logo.png" alt="" /></a>
-        <div class="nav-links" id="navLinks">
-          <i class="fa fa-times" onclick="hideMenu()"></i>
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="course.html">COURSE</a></li>
-            <li><a href="blog.html">BLOG</a></li>
-            <li><a href="contact.html">CONTACT US </a></li>
-          </ul>
-        </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Proudcore LTD</title>
+  <meta name="description" content="Contact Proudcore for solar and inverter projects, quotes, and site surveys." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="pc-header">
+    <div class="pc-container pc-nav">
+      <a class="pc-logo" href="index.html"><span class="pc-logo-mark">P</span><span class="pc-logo-text">Proudcore LTD</span></a>
+      <button class="pc-nav-toggle" aria-expanded="false" aria-controls="pc-menu" aria-label="Toggle navigation">☰</button>
+      <nav id="pc-menu" class="pc-menu" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a class="pc-cta" href="contact.html">Contact</a>
       </nav>
+    </div>
+  </header>
+
+  <main class="pc-container pc-page">
+    <header class="pc-page-head">
       <h1>Contact Us</h1>
-    </section>
+      <p>Tell us about your project. We’ll respond within one business day.</p>
+    </header>
 
-    <section class="location">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79041.45211547658!2d-1.329989097383529!3d51.7504937701373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48713380adc41faf%3A0xc820dba8cb547402!2sOxford%2C%20UK!5e0!3m2!1sen!2sng!4v1751744746082!5m2!1sen!2sng"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </section>
-
-    <section class="contact-us">
-      <div class="row">
-        <div class="contact-col">
-          <div>
-            <i class="far fa-home"></i>
-            <span>
-              <h5>XYZ Road, ABC Building</h5>
-              <p>North Oxford, Headington, UK</p>
-            </span>
-          </div>
-
-          <div>
-            <i class="far fa-phone"></i>
-            <span>
-              <h5>+44 0123456789</h5>
-              <p>Monday to Saturday, 10AM to 6PM</p>
-            </span>
-          </div>
-
-          <div>
-            <i class="far fa-envelope-o"></i>
-            <span>
-              <h5>clarketejiri@gmail.com</h5>
-              <p>Email us your query</p>
-            </span>
-          </div>
+    <section class="pc-grid pc-2col pc-contact">
+      <!-- Contact Form -->
+      <form id="contactForm" class="pc-card pc-form">
+        <label>
+          <span>Full Name</span>
+          <input type="text" name="name" required placeholder="Your name" />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required placeholder="you@example.com" />
+        </label>
+        <label>
+          <span>Phone</span>
+          <input type="tel" name="phone" placeholder="+234..." />
+        </label>
+        <label>
+          <span>Project Type</span>
+          <select name="type">
+            <option>Home</option>
+            <option>SME / Office</option>
+            <option>Estate</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="5" placeholder="Tell us your loads, desired backup hours, and location"></textarea>
+        </label>
+        <div class="pc-actions">
+          <button class="pc-btn pc-btn--primary" type="submit" id="submitBtn">
+            <span class="btn-text">Send Message</span>
+            <span class="spinner" style="display:none;"></span>
+          </button>
+          <a class="pc-btn" href="https://wa.me/2348000000000" target="_blank" rel="noopener">Chat on WhatsApp</a>
         </div>
-        <div class="contact-col">
-          <form action="form-handler.php" method="post">
-            <input
-              type="text"
-              name="name"
-              placeholder="Enter your name"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Enter email address"
-              required
-            />
-            <input
-              type="text"
-              name="subject"
-              placeholder="Enter your subject"
-              required
-            />
-            <textarea
-              rows="8"
-              name="message"
-              placeholder="Message"
-              required
-            ></textarea>
-            <button type="submit" class="hero-btn red-btn">Send Message</button>
-          </form>
+        <p id="formStatus" style="margin-top:1rem; font-weight:500;"></p>
+      </form>
+
+      <!-- Contact Details -->
+      <div class="pc-card">
+        <h3>Reach us</h3>
+        <ul class="pc-list">
+          <li><strong>Phone:</strong> <a href="tel:+2348000000000">+234 800 000 0000</a></li>
+          <li><strong>Email:</strong> <a href="mailto:hello@proudcore.com">hello@proudcore.com</a></li>
+          <li><strong>Address:</strong> Lagos &amp; Warri • Nationwide installs</li>
+        </ul>
+        <div class="pc-map">
+          <iframe title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.0!2d3.3792!3d6.5244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sLagos!5e0!3m2!1sen!2sNG!4v0000000000">
+          </iframe>
         </div>
       </div>
     </section>
+  </main>
 
-    <!-- Footer -->
-
-    <section class="footer">
-      <h4>About Us</h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-        repellendus unde corrupti nostrum labore sit enim delectus repellat
-        <br />
-        aperiam magni sunt architecto doloribus. Architecto, unde molestias
-        dolorem eum necessitatibus porro?
-      </p>
-      <div class="icons">
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-linkedin"></i>
+  <footer class="pc-footer">
+    <div class="pc-container pc-footer-grid">
+      <div>
+        <div class="pc-logo pc-logo--footer"><span class="pc-logo-mark">P</span><span class="pc-logo-text">Proudcore LTD</span></div>
+        <p class="pc-mt-2">Reliable solar & inverter systems built for the Nigerian environment.</p>
       </div>
-      <p>Made with <i class="fa fa-heart-o"></i> by ClarkeTJ</p>
-    </section>
+      <div>
+        <h4>Contact</h4>
+        <ul class="pc-list">
+          <li><a href="tel:+2348000000000">+234 800 000 0000</a></li>
+          <li><a href="mailto:hello@proudcore.com">proudcore@gmail.com</a></li>
+          <li>Lagos • Warri • Nationwide installs</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="pc-list">
+          <li><a href="products.html">Products</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Get a Quote</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pc-container pc-footer-bottom">
+      <small>&copy; <span id="year"></span> Proudcore LTD. All rights reserved.</small>
+      <div class="pc-socials">
+        <a href="https://wa.me/2348000000000" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="#" target="_blank" rel="noopener">Facebook</a>
+        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
 
-    <script>
-      var navLinks = document.getElementById("navLinks");
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("b_uG8YeTSz2cvmt5-");
+    })();
+  </script>
 
-      function showMenu() {
-        navLinks.style.right = "0";
-      }
-      function hideMenu() {
-        navLinks.style.right = "-200px";
-      }
-    </script>
-  </body>
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+</body>
 </html>

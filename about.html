@@ -1,91 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eduford</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-  </head>
-  <body>
-    <section class="sub-header">
-      <nav>
-        <a href="index.html"><img src="imgs/logo.png" alt="" /></a>
-        <div class="nav-links" id="navLinks">
-          <i class="fa fa-times" onclick="hideMenu()"></i>
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="course.html">COURSE</a></li>
-            <li><a href="blog.html">BLOG</a></li>
-            <li><a href="contact.html">CONTACT US </a></li>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | Proudcore LTD</title>
+  <meta name="description" content="About Proudcore LTD — dependable solar and inverter solutions for homes, estates, and businesses." />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="pc-header">
+    <div class="pc-container pc-nav">
+      <a class="pc-logo" href="index.html"><span class="pc-logo-mark">P</span><span class="pc-logo-text">Proudcore LTD</span></a>
+     <button class="pc-nav-toggle" aria-expanded="false" aria-controls="pc-menu" aria-label="Toggle navigation">
+  ☰
+</button>
+      <nav id="pc-menu" class="pc-menu" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a class="pc-cta" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pc-container pc-page">
+    <header class="pc-page-head">
+      <h1>About Proudcore LTD</h1>
+      <p>We are a Nigerian energy company delivering dependable solar and inverter solutions for homes, estates, and businesses.</p>
+    </header>
+
+    <section class="pc-grid pc-2col">
+      <div>
+        <h2>Our Story</h2>
+        <p>Proudcore was founded to solve a simple problem: unreliable power should never halt productivity. Our team blends electrical engineering, project management, and hands-on field expertise to design systems that just work.</p>
+        <p>From rooftop solar to estate-wide audits, we prioritize safety, clean installations, and transparent pricing.</p>
+      </div>
+      <img class="pc-img-cover" src="assets/imgs/banner2.jpg" alt="Team reviewing solar project plans">
+    </section>
+
+    <section class="pc-section">
+      <div class="pc-grid pc-cards-3">
+        <div class="pc-card">
+          <h3>Mission</h3>
+          <p>Deliver reliable, affordable clean energy systems tailored to the Nigerian context.</p>
+        </div>
+        <div class="pc-card">
+          <h3>Vision</h3>
+          <p>Empower communities and businesses to thrive with predictable, sustainable power.</p>
+        </div>
+        <div class="pc-card">
+          <h3>Values</h3>
+          <p>Safety • Integrity • Excellence • Customer Success</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pc-section pc-section--alt">
+      <div class="pc-grid pc-2col">
+        <div>
+          <h2>What makes us different</h2>
+          <ul class="pc-list pc-list--check">
+            <li>Load-first design — we model your usage, then size components.</li>
+            <li>Neat, code-compliant installs with earthing & protection.</li>
+            <li>Clear handover docs and training for your team.</li>
           </ul>
         </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
-      </nav>
-      <h1>About Us</h1>
-    </section>
-
-    <!-- about us content -->
-
-    <section class="about-us">
-      <div class="row">
-        <div class="about-col">
-          <h1>We are the world's Largest university</h1>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
-            quod delectus, dolor officiis dolores placeat iure velit similique
-            quo perspiciatis soluta recusandae adipisci ratione exercitationem
-            molestiae qui ad asperiores corporis!
-          </p>
-          <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
-        </div>
-        <div class="about-col">
-          <img src="imgs/about.jpg" alt="" />
-        </div>
+        <img class="pc-img-cover" src="assets/imgs/solar5.jpg" alt="Solar panels at sunset">
       </div>
     </section>
+  </main>
 
-    <!-- Footer -->
-
-    <section class="footer">
-      <h4>About Us</h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-        repellendus unde corrupti nostrum labore sit enim delectus repellat
-        <br />
-        aperiam magni sunt architecto doloribus. Architecto, unde molestias
-        dolorem eum necessitatibus porro?
-      </p>
-      <div class="icons">
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-linkedin"></i>
+  <footer class="pc-footer">
+    <div class="pc-container pc-footer-grid">
+      <div>
+        <div class="pc-logo pc-logo--footer"><span class="pc-logo-mark">P</span><span class="pc-logo-text">Proudcore LTD</span></div>
+        <p class="pc-mt-2">Reliable solar & inverter systems built for the Nigerian environment.</p>
       </div>
-      <p>Made with <i class="fa fa-heart-o"></i> by ClarkeTJ</p>
-    </section>
+      <div>
+        <h4>Contact</h4>
+        <ul class="pc-list">
+          <li><a href="tel:+2348000000000">+234 800 000 0000</a></li>
+          <li><a href="mailto:hello@proudcore.com">proudcore@gmail.com</a></li>
+          <li>Lagos • Warri • Nationwide installs</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="pc-list">
+          <li><a href="products.html">Products</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Get a Quote</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pc-container pc-footer-bottom">
+      <small>&copy; <span id="year"></span> Proudcore LTD. All rights reserved.</small>
+      <div class="pc-socials">
+        <a href="https://wa.me/2348000000000" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="#" target="_blank" rel="noopener">Facebook</a>
+        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
 
-    <script>
-      var navLinks = document.getElementById("navLinks");
-
-      function showMenu() {
-        navLinks.style.right = "0";
-      }
-      function hideMenu() {
-        navLinks.style.right = "-200px";
-      }
-    </script>
-  </body>
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
