@@ -62,7 +62,7 @@ if (form) {
     // Show spinner
     btnText.style.display = "none";
     spinner.style.display = "inline-block";
-    spinner.innerHTML = "⏳";
+    spinner.innerHTML = "💫";
 
     const formData = {
       name: form.name.value,
