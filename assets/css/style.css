@@ -68,6 +68,8 @@ a:hover { text-decoration: underline; }
   color: #001b07;
   font-weight: 900;
 }
+
+
 .pc-logo--footer .pc-logo-mark { width: 28px; height: 28px; }
 .pc-logo-text { letter-spacing: .3px; }
 
@@ -400,3 +402,78 @@ a:hover { text-decoration: underline; }
 
 /*  Prevent page from scrolling when mobile menu is open (no side-shift) */
 body.menu-open { overflow: hidden; }
+
+
+/* ===== WhatsApp Floating Widget ===== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background-color: #25d366;
+  color: #fff;
+  text-decoration: none;
+  z-index: 9999;
+  font-size: 1.9rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: visible;
+}
+
+/* Force the icon to the absolute center */
+.whatsapp-float i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: inherit;
+  line-height: 1;
+}
+
+/* Hover effect */
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
+  background-color: #20ba5a;
+}
+
+/* Centered pulse halo */
+.whatsapp-float::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: rgba(37, 211, 102, 0.25);
+  transform: scale(1);
+  animation: pulse 1.8s infinite ease-in-out;
+  z-index: -1;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.7; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
+
+/* ===== Mobile Optimization ===== */
+@media (max-width: 768px) {
+  .whatsapp-float {
+    bottom: 16px;
+    right: 16px;
+    width: 52px;
+    height: 52px;
+    font-size: 1.8rem;
+  }
+}
+
+/* ===== Ultra-small screens ===== */
+@media (max-width: 400px) {
+  .whatsapp-float {
+    bottom: 12px;
+    right: 12px;
+    width: 46px;
+    height: 46px;
+    font-size: 1.6rem;
+  }
+}
